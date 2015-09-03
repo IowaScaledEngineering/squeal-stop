@@ -36,8 +36,12 @@ LICENSE:
 #include <NmraDcc.h>
 
 #define BACKLIGHT_PIN        10
-#define DETECTOR_INPUT_PIN   11
-#define SOUND_OUTPUT_PIN     12
+#define DETECTOR_INPUT_PIN_1   11  // D11 terminal on ARD-DCCSHIELD
+#define DETECTOR_INPUT_PIN_2   12  // D12 terminal on ARD-DCCSHIELD
+#define DETECTOR_INPUT_PIN_3   3   // JP4 on ARD-DCCSHIELD
+#define SOUND_OUTPUT_PIN_1     13  // On the SF Redboard, this pin has an LED.  Therefore, it cannot be an input since the pullup cannot overcome the load.
+#define SOUND_OUTPUT_PIN_2     A5  // SCL
+#define SOUND_OUTPUT_PIN_3     A4  // SDA
 
 #define EE_START   0x100
 
@@ -188,10 +192,18 @@ void setup()
 
 	lcd.begin(16, 2);
 
-	pinMode(DETECTOR_INPUT_PIN, INPUT);      // Detector input
-	digitalWrite(DETECTOR_INPUT_PIN, HIGH);  // Enable pull-up
-	digitalWrite(SOUND_OUTPUT_PIN, HIGH);  // Preset sound module trigger high (it's an active low trigger)
-	pinMode(SOUND_OUTPUT_PIN, OUTPUT);     // Sound module output
+	pinMode(DETECTOR_INPUT_PIN_1, INPUT);      // Detector input
+	pinMode(DETECTOR_INPUT_PIN_2, INPUT);
+	pinMode(DETECTOR_INPUT_PIN_3, INPUT);
+	digitalWrite(DETECTOR_INPUT_PIN_1, HIGH);  // Enable pull-up
+	digitalWrite(DETECTOR_INPUT_PIN_2, HIGH);
+	digitalWrite(DETECTOR_INPUT_PIN_3, HIGH);
+	digitalWrite(SOUND_OUTPUT_PIN_1, HIGH);  // Preset sound module trigger high (it's an active low trigger)
+	digitalWrite(SOUND_OUTPUT_PIN_2, HIGH);
+	digitalWrite(SOUND_OUTPUT_PIN_3, HIGH);
+	pinMode(SOUND_OUTPUT_PIN_1, OUTPUT);     // Sound module output
+	pinMode(SOUND_OUTPUT_PIN_2, OUTPUT);
+	pinMode(SOUND_OUTPUT_PIN_3, OUTPUT);
 
 	pinMode(BACKLIGHT_PIN, OUTPUT);     // Backlight
 
@@ -311,25 +323,57 @@ void loop()
 			if(currentSpeed > speedThreshold)
 			{
 				// Allow the detector to trigger flange squeal
-				if(digitalRead(DETECTOR_INPUT_PIN))
+				if(digitalRead(DETECTOR_INPUT_PIN_1))
 				{
-					digitalWrite(SOUND_OUTPUT_PIN, HIGH);
+					digitalWrite(SOUND_OUTPUT_PIN_1, HIGH);
 					lcd.setCursor(13,1);
-					lcd.print("OFF");
+					lcd.print("-");
 				}
 				else
 				{
-					digitalWrite(SOUND_OUTPUT_PIN, LOW);
+					digitalWrite(SOUND_OUTPUT_PIN_1, LOW);
 					lcd.setCursor(13,1);
-					lcd.print(" ON");
+					lcd.print("+");
+				}
+
+				if(digitalRead(DETECTOR_INPUT_PIN_2))
+				{
+					digitalWrite(SOUND_OUTPUT_PIN_2, HIGH);
+					lcd.setCursor(14,1);
+					lcd.print("-");
+				}
+				else
+				{
+					digitalWrite(SOUND_OUTPUT_PIN_2, LOW);
+					lcd.setCursor(14,1);
+					lcd.print("+");
+				}
+
+				if(digitalRead(DETECTOR_INPUT_PIN_3))
+				{
+					digitalWrite(SOUND_OUTPUT_PIN_3, HIGH);
+					lcd.setCursor(15,1);
+					lcd.print("-");
+				}
+				else
+				{
+					digitalWrite(SOUND_OUTPUT_PIN_3, LOW);
+					lcd.setCursor(15,1);
+					lcd.print("+");
 				}
 			}
 			else
 			{
 				// Block the flange squeal
-				digitalWrite(SOUND_OUTPUT_PIN, HIGH);
+				digitalWrite(SOUND_OUTPUT_PIN_1, HIGH);
 				lcd.setCursor(13,1);
-				lcd.print("OFF");
+				lcd.print("-");
+				digitalWrite(SOUND_OUTPUT_PIN_2, HIGH);
+				lcd.setCursor(14,1);
+				lcd.print("-");
+				digitalWrite(SOUND_OUTPUT_PIN_3, HIGH);
+				lcd.setCursor(15,1);
+				lcd.print("-");
 			}
 
 			sprintf(str, "ADR:%4d", listenAddr[listenAddrIndex]);
