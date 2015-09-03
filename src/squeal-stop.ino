@@ -69,7 +69,7 @@ DCC_MSG  Packet ;
 uint16_t listenAddr[16] = {0};
 uint8_t listenAddrIndex = 0;
 uint8_t currentSpeed = 0;
-uint8_t speedThreshold = 5;
+uint8_t speedThreshold = 3;
 
 uint8_t backlightState = 1;
 
