@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="setup.svg"
+   sodipodi:docname="setup-multiple.svg"
    inkscape:export-filename="/home/data/design/mrbus/mrb-iiab/doc/usermanual/irsense.png"
    inkscape:export-xdpi="299.99994"
    inkscape:export-ydpi="299.99994">
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="387.49821"
-     inkscape:cy="238.15597"
+     inkscape:zoom="1.979899"
+     inkscape:cx="387.20352"
+     inkscape:cy="210.03923"
      inkscape:document-units="in"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -303,11 +303,10 @@
        d="m 285.82143,897.987 0,117.0536"
        style="color:#000000;fill:none;stroke:#ff0000;stroke-width:2.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
+       id="path3304"
+       transform="translate(0,579.862)"
        style="color:#000000;fill:none;stroke:#000000;stroke-width:3.15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 222.85714,327.14286 21.25,-21.25 0,-81.96429 7.75478,-7.75478 72.39705,0"
-       id="path3306"
-       inkscape:connector-curvature="0"
-       transform="translate(0,579.862)" />
+       d="m 511.91964,191.60714 0,18.57143 -5.99522,5.99522 -181.66545,0 m -101.40183,110.96907 21.25,-21.25 0,-81.96429 7.75478,-7.75478 72.39705,0" />
     <path
        transform="translate(0,692.362)"
        inkscape:connector-curvature="0"
@@ -360,7 +359,8 @@
          sodipodi:role="line"
          id="tspan5366-5"
          x="99.703888"
-         y="906.77118">Sensor #3</tspan></text>
+         y="906.77118"
+         style="font-size:10px">Sensor Curve #3</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -371,7 +371,8 @@
          sodipodi:role="line"
          id="tspan5366-5-1"
          x="98.133583"
-         y="965.28552">Sensor #2</tspan></text>
+         y="965.28552"
+         style="font-size:10px">Sensor Curve #2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -380,9 +381,10 @@
        id="text5364-0-5"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan5366-5-4"
          x="98.045677"
-         y="1023.7969">Sensor #1</tspan></text>
+         y="1023.7969"
+         id="tspan3308"
+         style="font-size:10px">Sensor Curve #1</tspan></text>
     <path
        style="color:#000000;fill:none;stroke:#000000;stroke-width:3.1500001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 227.48319,227.22828 52.51681,0 10.22128,-10.22128 0,-66.92588 -12.25289,-12.25289 -50.4852,0"
@@ -420,11 +422,10 @@
        inkscape:connector-curvature="0"
        transform="translate(0,512.362)" />
     <path
+       id="path4076"
        transform="translate(0,579.862)"
-       inkscape:connector-curvature="0"
-       id="path4078"
-       d="m 222.85714,327.14286 21.25,-21.25 0,-81.96429 7.75478,-7.75478 72.39705,0"
-       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:2.25000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;fill:none;stroke:#ffffff;stroke-width:2.25000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 511.91964,191.60714 0,18.57143 -5.99522,5.99522 -181.66545,0 m -101.40183,110.96907 21.25,-21.25 0,-81.96429 7.75478,-7.75478 72.39705,0" />
     <path
        style="color:#000000;fill:none;stroke:#000000;stroke-width:3.1500001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 227.48319,209.22828 26.57017,0 10.20118,10.20118 0,76.24193 8.96714,9 102.91364,0"
@@ -1125,7 +1126,8 @@
          sodipodi:role="line"
          id="tspan5366-5-13"
          x="129.05139"
-         y="733.93048">Squealer #1</tspan></text>
+         y="733.93048"
+         style="font-size:9px">To CKT-SQUEAL Curve #1</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -1136,7 +1138,8 @@
          sodipodi:role="line"
          id="tspan5366-5-13-7"
          x="127.48108"
-         y="680.80823">Squealer #2</tspan></text>
+         y="680.80823"
+         style="font-size:9px">To CKT-SQUEAL Curve #2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:12px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -1147,7 +1150,8 @@
          sodipodi:role="line"
          id="tspan5366-5-13-4"
          x="127.39319"
-         y="644.40503">Squealer #3</tspan></text>
+         y="644.40503"
+         style="font-size:9px">To CKT-SQUEAL Curve #3</tspan></text>
     <path
        style="color:#000000;fill:none;stroke:#000000;stroke-width:3.1500001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 182.77891,120.12138 -49.7432,0"
@@ -2000,28 +2004,6 @@
        x="-758.29285"
        y="515.47601"
        transform="matrix(0,-1,1,0,0,0)" />
-    <path
-       style="color:#000000;fill:none;stroke:#000000;stroke-width:3.15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 511.91964,191.60714 0,18.57143 -5.99522,5.99522 -181.66545,0"
-       id="path3304"
-       inkscape:connector-curvature="0"
-       transform="translate(0,579.862)" />
-    <path
-       transform="translate(0,579.862)"
-       inkscape:connector-curvature="0"
-       id="path4076"
-       d="m 511.91964,191.60714 0,18.57143 -5.99522,5.99522 -181.66545,0"
-       style="color:#000000;fill:none;stroke:#ffff00;stroke-width:2.25000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <path
-       sodipodi:type="arc"
-       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.25;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="path4080"
-       sodipodi:cx="325.7742"
-       sodipodi:cy="203.04181"
-       sodipodi:rx="2.5253813"
-       sodipodi:ry="2.5253813"
-       d="m 328.29958,203.04181 c 0,1.39473 -1.13065,2.52538 -2.52538,2.52538 -1.39473,0 -2.52538,-1.13065 -2.52538,-2.52538 0,-1.39473 1.13065,-2.52538 2.52538,-2.52538 1.39473,0 2.52538,1.13065 2.52538,2.52538 z"
-       transform="translate(-1.5152304,592.99398)" />
     <rect
        style="color:#000000;fill:#0044aa;fill-opacity:1;fill-rule:nonzero;stroke:#0000c0;stroke-width:0.89999998;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect4073-7-9"
